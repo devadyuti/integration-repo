@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout
+                    pattern="%style{%d{ISO8601}} %highlight{%-5level }[%style{%t}{bright,blue}] %style{%C{10}}{bright,yellow}: %msg%n%throwable" />
+        </Console>
+        <SplunkHttp
+            name="splunkhttp"
+            url="https://localhost:8088"
+            token="f2f852f2-8a74-495f-b9a2-28e3c6684ab2"
+            host="GBLDDH005"
+            index="http_log_event_collector_idx"
+            type="raw"
+            source="http-log-event"
+            sourcetype="_json"
+            messageFormat="text"
+            disableCertificateValidation="true"
+            >
+            <PatternLayout pattern="%m" />
+        </SplunkHttp>
+
+    </Appenders>
+
+    <Loggers>
+        <!-- LOG everything at INFO level -->
+        <Root level="info">
+            <AppenderRef ref="console" />
+            <AppenderRef ref="splunkhttp" />
+        </Root>
+    </Loggers>
+</Configuration>
