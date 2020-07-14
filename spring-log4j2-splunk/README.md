@@ -1,4 +1,4 @@
-## Enabling Http Event Collector in Splunk
+###### Enabling Http Event Collector in Splunk
 * Login to Splunk
 * Go to Settings -> Data Inputs -> Http Event Collector
 * Click on Global Settings
