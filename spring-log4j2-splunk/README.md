@@ -21,3 +21,6 @@ mvn clean install
 java -jar target/spring-log4j2-splunk-1.0.0.jar
 
 ## Validate in Splunk Search/Reporting
+* Login to Splunk
+* Go to Apps -> Search & Reporting
+* Type index="http_log_event_collector_idx" to search
