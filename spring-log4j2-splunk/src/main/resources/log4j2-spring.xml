@@ -9,7 +9,7 @@
             name="splunkhttp"
             url="https://localhost:8088"
             token="XXXXXX-XXXXX-XXXX-XXXX-XXXXXXXXXXXX"
-            host="GBLDDH005"
+            host="localhost"
             index="http_log_event_collector_idx"
             type="raw"
             source="http-log-event"
