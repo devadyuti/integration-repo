@@ -8,7 +8,14 @@
     <name>${project.groupId}::${project.artifactId}</name>
     <description>Integration Maven Master Project</description>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>14</java.version>
+    </properties>
+
     <modules>
         <module>spring-log4j2-splunk</module>
+        <module>spring-mongo-rest</module>
     </modules>
 </project>
