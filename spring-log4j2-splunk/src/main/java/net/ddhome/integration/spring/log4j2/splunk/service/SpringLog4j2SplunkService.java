@@ -7,6 +7,9 @@ import org.springframework.stereotype.Service;
 
 import java.util.Date;
 
+/**
+ * @author devadyuti das
+ */
 @Service
 public class SpringLog4j2SplunkService implements CommandLineRunner {
     private Logger log = LogManager.getLogger(SpringLog4j2SplunkService.class);
